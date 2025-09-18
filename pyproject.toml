@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm[toml]"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "submarlin_stream"
+description = "Building a web app to visualize processed MARLIN results"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Luis Gutierrez-Lopez", email = "gutiloluis@gmail.com"}]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "streamlit",
+    "pandas",
+    "matplotlib",
+    "plotly",
+    "streamlit-aggrid",
+    "h5py",
+]
+dynamic = ["version"]
+
+[tool.setuptools]
+packages = ["submarlin_stream"]
+
+[tool.setuptools_scm]
+write_to = "submarlin_stream/_version.py"
