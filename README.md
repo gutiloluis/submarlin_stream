@@ -1,2 +1,2 @@
-# submarlin_ss_streamlit
+# submarlin_stream
 Web app to visualize processed MARLIN results
